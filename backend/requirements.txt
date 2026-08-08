@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+torch
+transformers==4.55.4
+sentencepiece
+accelerate
+safetensors
+newsapi-python
+requests
+python-dotenv
+trafilatura
+pytest
