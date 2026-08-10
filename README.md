@@ -2,7 +2,9 @@
 
 ### AI-Powered News Perspective Analyzer
 
-NewsLens is a web application that helps users explore how different news sources present the same topic.
+NewsLens is a full-stack AI application for analyzing how different news sources cover the same topic. It combines article retrieval, content extraction, summarization, political-bias classification, and stance analysis into a single workflow.
+
+NewsLens helps users compare how different news sources present the same topic by collecting, processing, summarizing, and analyzing articles through a unified AI pipeline.
 
 The application retrieves relevant news articles, extracts their content, generates concise summaries, and runs **two separate, independent classification tasks** on each article:
 
@@ -10,6 +12,16 @@ The application retrieves relevant news articles, extracts their content, genera
 2. **Stance** - Supports / Neutral / Questions-Critical, i.e. whether the article supports, stays neutral on, or questions the searched topic. This is a different task from bias - an article can be politically Left-leaning while still questioning the specific topic being searched, and vice versa.
 
 > ⚠️ **Current status of the stance model:** the stance model artifact currently used is a 4-class model (Agree / Discuss / Disagree / Unrelated) left over from an earlier stance-detection experiment. It does **not** produce the required Supports / Neutral / Questions-Critical labels. The backend detects this mismatch at inference time and reports stance as unavailable rather than guessing a label mapping. See Limitations below.
+
+## 🎯 Project Overview
+
+NewsLens is designed as a perspective-comparison tool rather than a fact-checking system. The application processes multiple articles for a user-provided topic and presents the results through two independent analytical dimensions:
+
+- **Political bias:** Left, Center, or Right
+- **Topic stance:** Supports, Neutral, or Questions / Critical
+
+The system separates these tasks because political orientation and an article's stance toward a specific topic are not the same property.
+
 
 The goal is not to determine whether an article is true or false, but to help users **compare different perspectives on the same topic**.
 
@@ -426,13 +438,13 @@ Tests cover request validation, article deduplication/extraction error handling,
 
 ---
 
-## 👨‍💻 Authors
+## 👨‍💻 Author
 
-**Ganesh Karthik**
-B.Tech Computer Science Engineering
-IIITDM Jabalpur
+**Siddharth Kandela**  
+B.Tech Computer Science Engineering  
+IIITDM Jabalpur  
 
-GitHub: [ganeshkarthik016](https://github.com/ganeshkarthik016?utm_source=chatgpt.com)
+GitHub: [sx1ddu](https://github.com/sx1ddu)
 
 ---
 
