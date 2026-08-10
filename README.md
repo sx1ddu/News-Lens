@@ -448,14 +448,6 @@ GitHub: [sx1ddu](https://github.com/sx1ddu)
 
 ---
 
-## 📄 License
-
-This project is licensed under the **MIT License**.
-
-See [`LICENSE`](LICENSE) for details.
-
----
-
 ## ⚖️ Disclaimer
 
 NewsLens is an educational and research-oriented project.
